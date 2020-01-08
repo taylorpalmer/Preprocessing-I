@@ -1,1 +1,217 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  font-size: 1rem;
+}
+html h1,
+body h1 {
+  font-size: 3rem;
+}
+html h2,
+body h2 {
+  font-size: 2rem;
+}
+html h3,
+body h3 {
+  font-size: 1.5rem;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 2% 0;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  background-color: coral;
+  padding: 1%;
+  border: solid;
+  border-radius: 10px;
+}
+header .intro {
+  background-color: aquamarine;
+  margin: 0 5%;
+  padding: 2%;
+  border-radius: 10px;
+}
+header .intro img {
+  padding: 2% 15%;
+}
+header .intro h1 {
+  padding: 2%;
+}
+header .intro p {
+  padding: 2% 2%;
+}
+header .intro .about {
+  text-align: center;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+.main div {
+  text-align: center;
+  width: 40%;
+}
+.main h2 {
+  padding-bottom: 2%;
+}
+.main h3 {
+  text-decoration: underline;
+  padding-bottom: 2%;
+}
+.history {
+  text-align: center;
+  padding: 2%;
+}
+.history h3 {
+  text-decoration: underline;
+  padding-bottom: 2%;
+}
+.history h4 {
+  padding-bottom: 1%;
+}
+footer .contact {
+  padding: 2%;
+}
+footer .contact a,
+footer .contact p {
+  font-size: 1.5rem;
+  padding: 1%;
+}
