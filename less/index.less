@@ -134,66 +134,118 @@ table {
   box-sizing: border-box;
 }
 
+@pad: 2%;
+
+@round-edge: 10px;
+
+.link-color {
+  color: floralwhite;
+  background-color: coral;
+}
+
+.link-hov {
+  color: coral;
+  background-color: floralwhite;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
 html,
 body {
   height: 100%;
   font-size: 62.5%;
   font-size: 1rem;
+  background-color: darkslategray;
+  color: floralwhite;
+
   h1 {
     font-size: 3rem;
+
+    @media (max-width: 500px) {
+      font-size: 2rem;
+    }
   }
   h2 {
     font-size: 2rem;
+
+    @media (max-width: 500px) {
+      font-size: 1.5rem;
+    }
   }
   h3 {
     font-size: 1.5rem;
+
+    @media (max-width: 500px) {
+      font-size: 1.25rem;
+    }
   }
 }
 
 header {
   nav {
-    display: flex;
-    justify-content: center;
+    .flex();
     justify-content: space-around;
     padding: 2% 0;
 
+    @media (max-width: 500px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     a {
+      .link-color();
       text-decoration: none;
-      color: black;
-      background-color: coral;
       padding: 1%;
-      border: solid;
-      border-radius: 10px;
+      border-radius: @round-edge;
+      margin: 2%;
+    }
+    a:hover {
+      .link-hov();
     }
   }
   .intro {
-    background-color: aquamarine;
+    background-color: dimgray;
     margin: 0 5%;
-    padding: 2%;
-    border-radius: 10px;
+    padding: @pad;
+    border-radius: @round-edge;
 
     img {
       padding: 2% 15%;
+      width: 100%;
     }
 
     h1 {
-      padding: 2%;
+      padding: @pad;
     }
 
     p {
-      padding: 2% 2%;
+      padding: @pad;
     }
 
     .about {
       text-align: center;
+
+      a {
+        .link-color();
+        text-decoration: none;
+        padding: 1%;
+        margin: 2%;
+        border-radius: @round-edge;
+      }
+
+      a:hover {
+        .link-hov();
+      }
     }
   }
 }
 
 .main {
-  display: flex;
-  justify-content: center;
-  padding: 2%;
+  .flex();
+  padding: @pad;
 
   div {
     text-align: center;
@@ -201,22 +253,22 @@ header {
   }
 
   h2 {
-    padding-bottom: 2%;
+    padding-bottom: @pad;
   }
 
   h3 {
     text-decoration: underline;
-    padding-bottom: 2%;
+    padding-bottom: @pad;
   }
 }
 
 .history {
   text-align: center;
-  padding: 2%;
+  padding: @pad;
 
   h3 {
     text-decoration: underline;
-    padding-bottom: 2%;
+    padding-bottom: @pad;
   }
   h4 {
     padding-bottom: 1%;
@@ -225,11 +277,30 @@ header {
 
 footer {
   .contact {
-    padding: 2%;
+    padding: @pad;
+
+    h2 {
+      padding: 2% 0;
+    }
+
     a,
     p {
       font-size: 1.5rem;
-      padding: 1%;
+      padding: 1% 0;
+      color: floralwhite;
+
+      @media (max-width: 500px) {
+        font-size: 1rem;
+      }
     }
+
+    a:hover {
+      color: coral;
+    }
+  }
+
+  .legal {
+    text-align: center;
+    padding: 2% 0;
   }
 }
